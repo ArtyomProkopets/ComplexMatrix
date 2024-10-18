@@ -44,11 +44,10 @@ public class ComplexNumber {
         return new ComplexNumber(this.Re - num.Re, this.Im - num.Im);
     }
 
-/*    public ComplexNumber mult(ComplexNumber num){
-
+    public ComplexNumber mult(ComplexNumber num){
+        ComplexNumber product = new ComplexNumber(0, 0);
+        product.Re = this.Re * num.Re - this.Im * num.Im;
+        product.Im = this.Re * num.Im + this.Im * num.Re;
+        return product;
     }
-
-    public ComplexNumber div(ComplexNumber num){
-
-    }*/
 }
